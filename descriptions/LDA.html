@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Linear Discriminant Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><img src="../images/logoNew.png" alt="" /></span><span class="title">CAML: Courses in Applied Machine Learning</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../About.html">About</a></li>
+						<li><a href="../Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Linear Discriminant Analysis</h1>
+							<!--<span class="image main"><img src="../images/pic13.jpg" alt="" /></span>-->
+							<p>Linear regression is an example of a <i>Discriminative</i> model: For a set of features, x, it predicts the most likely value that a related target variable, y, will take. Discriminative models often exhibit high predictive accuracy, but they are unable to make predictions when one of the features is missing, a situation that occurs regularly when working with real-world data.</p>
+
+							<p>An alternative to Discriminative models are <i>Generative</i> models: Instead of modelling the probability that y will take a specific value conditional on certain x values, Generative models model the probability that y will take a specific value, y0, AND x will take a specific value, x0. Described using mathematical notation, we model P(y, x) instead of P(y|x).</p>
+
+							<p>This might sound like a minor change, but it makes all the difference when dealing with missing data: Using Bayes' rule, we can use P(y, x) to calculate P(y|x), meaning that we can make predictions in the same way that Discriminative models do, but we can also calculate P(y|x*), where x* is a subset of the feature set. We can therefore use the same model to make predictions about the target variable when we have missing data</p>
+
+							<p>In the notebooks below, we implement the Linear Discriminant Analysis classifier, a Generative model first described by Sir Ronald Fisher in 1936.</p>
+
+							<h3>Online resources</h3>
+
+							<ul>
+								<li>Some slides on <a href = "https://mdav.ece.gatech.edu/ece-6254-spring2017/notes/04-plugin-rules.pdf">Bayes Classifiers</a> from a course at Georgia Tech - covers LDA and Naive Bayes;</li>
+								<li>A decidedly less rigourous exposition: <a href = "https://www.blopig.com/blog/2020/07/no-labels-no-problem-a-quick-introduction-to-gaussian-mixture-models/"> A blog post </a>on LDA and Gaussian Mixture Models I wrote for my <a href = "https://www.blopig.com/blog/"> research group's blog </a>(*Shameless self-promotion claxon*)</li>
+								<li>A <a href = "https://scikit-learn.org/stable/modules/lda_qda.html" >nice explanation</a> on the scikit-learn webpage.</li>
+
+							</ul>
+
+
+							<h3>Click the links below to access the Jupyter Notebooks for Linear Discriminant Analysis</h3>
+							<ul>
+								<li>LDA - Empty [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FLDA%2FLinear%20Discriminant%20Analysis%20-%20Classification%20-%20Empty.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/LDA/Linear Discriminant Analysis - Classification - Empty.ipynb" download>.ipynb file</a>]</li>
+								<li>LDA - Redacted [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FLDA%2FLinear%20Discriminant%20Analysis%20-%20Classification%20-%20Redacted.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/LDA/Linear Discriminant Analysis - Classification - Redacted.ipynb" download>.ipynb file</a>]</li>
+								<li>LDA - Complete [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FLDA%2FLinear%20Discriminant%20Analysis%20-%20Classification%20-%20Complete.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/LDA/Linear Discriminant Analysis - Classification - Complete.ipynb" download>.ipynb file</a>  |  <a href = "../htmlNotebooks/Linear Discriminant Analysis.html">HTML file</a>]
+							</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+						-->
+							<!--
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						-->
+							<ul class="copyright">
+								<li>&copy; Tom Hadfield. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

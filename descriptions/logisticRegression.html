@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Logistic Regression</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><img src="../images/logoNew.png" alt="" /></span><span class="title">CAML: Courses in Applied Machine Learning</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../About.html">About</a></li>
+						<li><a href="../Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Logistic Regression</h1>
+							<!--<span class="image main"><img src="../images/pic13.jpg" alt="" /></span>-->
+							<p>It's a common point of confusion that one of the most widely used models for classification has the word 'regression' in its name.
+							This is because although we might be interested in predicting a binary (0-or-1) label, logistic regression actually predicts the probability that a label takes a specific value,
+							 meaning that we're actually predicting a continuous variable which can take values between 0 and 1.</p>
+
+							 <p>As with linear regression, logistic regression models are interpretable and use a weighted sum of the features to predict the label.
+								 However, to ensure that predictions are between 0 and 1, logistic regression applies a non-linear function to the weighted sum; a consequence of this is that a closed-form solution doesn't exist in the way that it does for linear regression, meaning that we need to find a different way of estimating the model parameters.
+							 The most common approach is known as Iteratively Reweighted Least Squares, which you can implement in the notebooks below.</p>
+
+							 <h3>Online resources</h3>
+
+ 							<ul>
+ 								<li>A <a href = "https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/pdfs/40%20LogisticRegression.pdf">cheatsheet</a> on logistic regression by Chris Piech of Stanford;</li>
+ 								<li>Section 4.4 of <a href = "https://web.stanford.edu/~hastie/Papers/ESLII.pdf">Hastie et al.'s Elements of Statistical Learning</a> for a full derivation of the IRLS algorithm;</li>
+ 								<li>A <a href = "https://www.youtube.com/watch?v=X-7sA83PjPM&ab_channel=mathematicalmonk">youtube video</a> on the derivation of the IRLS algorithm.</li>
+
+ 							</ul>
+
+
+							<h3>Click the links below to access the Jupyter Notebooks for logistic regression</h3>
+
+							<ul>
+								<li>Logistic Regression - Empty [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FlinearRegression%2FLogistic%20Regression%20-%20Classification%20-%20Empty.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/linearRegression/Logistic Regression - Classification - Empty.ipynb" download>.ipynb file</a>]</li>
+								<li>Logistic Regression - Redacted [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FlinearRegression%2FLogistic%20Regression%20-%20Classification%20-%20Redacted.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/linearRegression/Logistic Regression - Classification - Redacted.ipynb" download>.ipynb file</a>]</li>
+								<li>Logistic Regression - Complete [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FlinearRegression%2FLogistic%20Regression%20-%20Classification%20-%20Complete.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/linearRegression/Logistic Regression - Classification - Complete.ipynb" download>.ipynb file</a>  |  <a href = "../htmlNotebooks/Logistic Regression.html">HTML file</a>]
+							</ul>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+						-->
+							<!--
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						-->
+							<ul class="copyright">
+								<li>&copy; Tom Hadfield. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

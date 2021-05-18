@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prinicpal Components Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><img src="../images/logoNew.png" alt="" /></span><span class="title">CAML: Courses in Applied Machine Learning</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../About.html">About</a></li>
+						<li><a href="../Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Prinicpal Components Analysis</h1>
+							<!--<span class="image main"><img src="../images/pic13.jpg" alt="" /></span>-->
+							<p>There are lots of reasons why we might want to reduce the number of features in our dataset. For example, we might want to visualise the data in 2- or 3-D, or we might only have a limited number of examples and seek to reduce the risk of overfitting.</p>
+
+							<p>However, if we discard features from our dataset there's a chance we might be throwing away information which is essential for our model to achieve good predictive accuracy. We can use principal components analysis (PCA) to reduce the size of our feature set whilst retaining important information. In this context, we say 'important information' to mean that observations which were not the same in our original feature set will not be the same in our transformed dataset and that points which were far away from each other in the original dataset will remain far away from each other.</p>
+
+							<h3>Online resources</h3>
+
+							<ul>
+								<li>An example of PCA <a href = "https://www.math.umd.edu/~petersd/666/html/iris_pca.html"> being applied </a>to the classic Iris dataset (notes from a course at the University of Maryland);</li>
+								<li>An excellent <a href = "https://setosa.io/ev/principal-component-analysis/" >visualisation tool</a> created by Victor Powell</li>
+
+							</ul>
+
+							<h3>Click the links below to access the Jupyter Notebooks for PCA</h3>
+							<ul>
+								<li>PCA - Empty [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2Funsupervised%2FPrincipal%20Components%20Analysis%20-%20Empty.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/unsupervised/Principal Components Analysis - Empty.ipynb" download>.ipynb file</a>]</li>
+								<li>PCA - Redacted [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2Funsupervised%2FPrincipal%20Components%20Analysis%20-%20Redacted.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/unsupervised/Principal Components Analysis - Redacted.ipynb" download>.ipynb file</a>]</li>
+								<li>PCA - Complete [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2Funsupervised%2FPrincipal%20Components%20Analysis%20-%20Complete.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/unsupervised/Principal Components Analysis - Complete.ipynb" download>.ipynb file</a>  |  <a href = "../htmlNotebooks/Principal Components Analysis.html">HTML file</a>]
+							</ul>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+						-->
+							<!--
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						-->
+							<ul class="copyright">
+								<li>&copy; Tom Hadfield. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bagging</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><img src="../images/logoNew.png" alt="" /></span><span class="title">CAML: Courses in Applied Machine Learning</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../About.html">About</a></li>
+							<li><a href="../Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Bagging</h1>
+							<!--<span class="image main"><img src="../images/pic13.jpg" alt="" /></span>-->
+
+							<p>Bagging is a portmanteau of 'Bootstrapped Aggregation', which tells us all we need to know about how the algorithm works: Aggregation means that we train lots of different models and combine their results in order to improve our predictive accuracy.</p>
+
+							<p>Training lots of models using a finite dataset presents us with a dilemma: Either we train each model using the same dataset, leading to similar results for each model; or we split the dataset and train each model using a subset of the data, risking not giving the constituent models enough data.</p>
+
+							<p>Fortunately we can use the Statistician's trick of Boostrapping, which allows us to use a dataset to create a 'new' dataset of the same size. In this way, we can train as many different models as we want using an appropriately sized dataset.</p>
+
+							<p>In the notebooks below, we implement a Bagged model using Decision Trees as building blocks.</p>
+
+
+							<h3>Online resources</h3>
+
+							<ul>
+							 <li>An <a href = "https://towardsdatascience.com/an-introduction-to-the-bootstrap-method-58bcb51b4d60">article</a> on bootstrapping by Lorna Yen;</li>
+							 <li>A <a href = "https://medium.com/ml-research-lab/ensemble-learning-relation-with-bias-and-variance-431cdc0a3fc9">series of blog posts</a> on ensemble methods and the bias-variance decomposition;</li>
+							</ul>
+
+
+							<h3>Click the links below to access the Jupyter Notebooks for Bagging</h3>
+
+							<ul>
+								<li>Bagging - Empty [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FneuralNetwork%2FBagging%2FBagging%20-%20Regression%20-%20Single%20Variable%20-%20Empty.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/Bagging/Bagging - Regression - Single Variable - Empty.ipynb" download>.ipynb file</a>]</li>
+								<li>Bagging - Redacted [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FneuralNetwork%2FBagging%2FBagging%20-%20Regression%20-%20Single%20Variable%20-%20Redacted.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/Bagging/Bagging - Regression - Single Variable - Redacted.ipynb" download>.ipynb file</a>]</li>
+								<li>Bagging - Complete [<a href = "https://mybinder.org/v2/gh/teh67/teh67.github.io.git/master?filepath=Implementations%2FneuralNetwork%2FBagging%2FBagging%20-%20Regression%20-%20Single%20Variable%20-%20Complete.ipynb" download>Online notebook</a>  |  <a href = "../Implementations/Bagging/Bagging - Regression - Single Variable - Complete.ipynb" download>.ipynb file</a>  |  <a href = "../htmlNotebooks/Bagging.html">HTML file</a>]
+							</ul>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!--
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+						-->
+							<!--
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						-->
+							<ul class="copyright">
+								<li>&copy; Tom Hadfield. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
